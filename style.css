@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box;
+    border:dashed; */
+    }
+
+body {
+    background-color: rgb(240, 230, 218);
+    font-family: 'Source Serif 4', sans-serif;
+    background-image: url("assets/background.svg");
+}
+/* the main container */
+
+.card{
+ width:70%;
+ height:100%;
+  margin: 3em auto;
+  overflow: hidden;
+  box-shadow: 2px 5px 15px 0px #17161694;
+  background-color:rgb(255, 255, 255);
+  border-radius: 25px;
+}
+
+.front-card{
+
+  background-image: url("assets/Front-of-Card.svg");
+  background-position: center;
+}
+ 
+.back-card {
+  background-image: url("assets/Back-of-Card.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+h1{
+  /* to left align text */
+  font-size: 6em;
+  margin-top: 10%;
+  margin-left:21%;
+  color:#426B70;
+
+  font-family: 'Source Serif 4', sans-serif;
+}
+
+.back-text {
+  margin-top: 50%;
+  margin-left:20%;
+}
+h2{
+  /* to left align text */
+  font-size: 3em;
+  margin-top: 1%;
+  margin-left:33%;
+  color:#426B70;
+
+  font-family: 'Source Serif 4', sans-serif;
+}
+h3{
+  font-size: 1.5em;
+  color:#426B70;
+  margin-top: 20%;
+  margin-left: 23%;
+  margin-right: 20%;
+}
+h4{
+  font-size: 1.5em;
+  color:#426B70;
+  margin-top: 3%;
+  margin-left:23%;
+}
+.icon-container{
+  margin-left: 13%;
+  margin-top: -10.5%;
+  width: 6%;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr; 
+    
+
+
+  
+}
+
+svg{
+  fill:rgba(38, 82, 107, 0.932);
+ 
+ 
+  /* margin: 0 auto */
+}
+
+svg:hover{
+  fill:rgb(113, 149, 165);
+  
+  /* margin: 0 auto */
+  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+animation-duration: 2s; /* don't forget to set a duration! */
+}
